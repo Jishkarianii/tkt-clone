@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'tkt';
+    src: url('fonts/tkt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^='icon-'],
+  [class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'tkt' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-winter-active:before {
+    content: '\e900';
+  }
+  .icon-winter:before {
+    content: '\e901';
+  }
+  .icon-arrow-fill:before {
+    content: '\e902';
+  }
+  .icon-arrow:before {
+    content: '\e903';
+  }
+  .icon-avatar:before {
+    content: '\e904';
+  }
+  .icon-calendar:before {
+    content: '\e905';
+  }
+  .icon-call:before {
+    content: '\e906';
+  }
+  .icon-concerts-active:before {
+    content: '\e907';
+  }
+  .icon-concerts:before {
+    content: '\e908';
+  }
+  .icon-event-active:before {
+    content: '\e909';
+  }
+  .icon-event:before {
+    content: '\e90a';
+  }
+  .icon-face-control:before {
+    content: '\e90b';
+  }
+  .icon-facebook:before {
+    content: '\e90c';
+  }
+  .icon-favorite:before {
+    content: '\e90d';
+  }
+  .icon-flights-active:before {
+    content: '\e90e';
+  }
+  .icon-flights:before {
+    content: '\e90f';
+  }
+  .icon-home-active:before {
+    content: '\e910';
+  }
+  .icon-home:before {
+    content: '\e911';
+  }
+  .icon-iinfo:before {
+    content: '\e912';
+  }
+  .icon-kids-active:before {
+    content: '\e913';
+  }
+  .icon-kids:before {
+    content: '\e914';
+  }
+  .icon-mail:before {
+    content: '\e915';
+  }
+  .icon-menu:before {
+    content: '\e916';
+  }
+  .icon-messenger:before {
+    content: '\e917';
+  }
+  .icon-movie-active:before {
+    content: '\e918';
+  }
+  .icon-movie:before {
+    content: '\e919';
+  }
+  .icon-opera-active:before {
+    content: '\e91a';
+  }
+  .icon-opera:before {
+    content: '\e91b';
+  }
+  .icon-other-active:before {
+    content: '\e91c';
+  }
+  .icon-other:before {
+    content: '\e91d';
+  }
+  .icon-railway-active:before {
+    content: '\e91e';
+  }
+  .icon-railway:before {
+    content: '\e91f';
+  }
+  .icon-remove-in-circle-fill:before {
+    content: '\e920';
+  }
+  .icon-remove-in-circle:before {
+    content: '\e921';
+  }
+  .icon-remove:before {
+    content: '\e922';
+  }
+  .icon-resale-active:before {
+    content: '\e923';
+  }
+  .icon-resale:before {
+    content: '\e924';
+  }
+  .icon-search:before {
+    content: '\e925';
+  }
+  .icon-share:before {
+    content: '\e926';
+  }
+  .icon-sport-active:before {
+    content: '\e927';
+  }
+  .icon-sport:before {
+    content: '\e928';
+  }
+  .icon-theatre-active:before {
+    content: '\e929';
+  }
+  .icon-theatre:before {
+    content: '\e92a';
+  }
+  .icon-ticket-active:before {
+    content: '\e92b';
+  }
+  .icon-ticket:before {
+    content: '\e92c';
+  }
+  .icon-timer:before {
+    content: '\e92d';
+  }
+  .icon-transport-active:before {
+    content: '\e92e';
+  }
+  .icon-transport:before {
+    content: '\e92f';
+  }
+  .icon-verified:before {
+    content: '\e930';
+  }
+  .icon-youtube:before {
+    content: '\e931';
+  }
+  .icon-arrow-in-circle:before {
+    content: '\e932';
+  }
+  .icon-check:before {
+    content: '\e933';
+  }
+  .icon-filter:before {
+    content: '\e934';
+  }
+  .icon-edit:before {
+    content: '\e935';
+  }
+  .icon-play:before {
+    content: '\e936';
+  }
+  .icon-sun:before {
+    content: '\e937';
+  }
+  .icon-sunset:before {
+    content: '\e938';
+  }
+  .icon-time:before {
+    content: '\e939';
+  }
+  .icon-add-to-calendar:before {
+    content: '\e93a';
+  }
+  .icon-alert-circle:before {
+    content: '\e93b';
+  }
+  .icon-alert-triangle:before {
+    content: '\e93c';
+  }
+  .icon-check-circle:before {
+    content: '\e93d';
+  }
+  .icon-hide:before {
+    content: '\e93e';
+  }
+  .icon-long-arrow:before {
+    content: '\e93f';
+  }
+  .icon-minus:before {
+    content: '\e940';
+  }
+  .icon-moon:before {
+    content: '\e941';
+  }
+  .icon-plus:before {
+    content: '\e942';
+  }
+  .icon-print:before {
+    content: '\e943';
+  }
+  .icon-question:before {
+    content: '\e944';
+  }
+  .icon-star:before {
+    content: '\e945';
+  }
+  .icon-timeout:before {
+    content: '\e946';
+  }
+  .icon-up-down-arrows:before {
+    content: '\e947';
+  }
+  .icon-view:before {
+    content: '\e948';
+  }
+  .icon-return:before {
+    content: '\e949';
+  }
+  .icon-share-link:before {
+    content: '\e94a';
+  }
+  .icon-long-arrow-down:before {
+    content: '\e94b';
+  }
+  .icon-long-arrow-up:before {
+    content: '\e94c';
+  }
+  .icon-restaurant-active:before {
+    content: '\e94d';
+  }
+  .icon-restaurant:before {
+    content: '\e94e';
+  }
+  .icon-exit:before {
+    content: '\e94f';
+  }
+  .icon-batumi:before {
+    content: '\e950';
+  }
+  .icon-batumi-active:before {
+    content: '\e951';
+  }
+  .icon-baby:before {
+    content: '\e952';
+  }
+  .icon-circle:before {
+    content: '\e953';
+  }
+  .icon-id:before {
+    content: '\e954';
+  }
+  .icon-kid-with-mom:before {
+    content: '\e955';
+  }
+  .icon-kids-parents:before {
+    content: '\e956';
+  }
+  .icon-not-allowed:before {
+    content: '\e957';
+  }
+  .icon-passenger-not-allowed:before {
+    content: '\e958';
+  }
+  .icon-pin:before {
+    content: '\e959';
+  }
+  .icon-student:before {
+    content: '\e95a';
+  }
+  .icon-swap:before {
+    content: '\e95b';
+  }
+  .icon-diamond:before {
+    content: '\e95c';
+  }
+  .icon-seat:before {
+    content: '\e95d';
+  }
+  .icon-forstudents:before {
+    content: '\e95e';
+  }
+  .icon-forstudents-active:before {
+    content: '\e95f';
+  }
+  .icon-TsinandaliFestival-active:before {
+    content: '\e960';
+  }
+  .icon-TsinandaliFestival:before {
+    content: '\e961';
+  }
+  .icon-newyear:before {
+    content: '\e962';
+  }
+  .icon-MasterCardOffers:before {
+    content: '\e93f';
+  }
+  .icon-MasterCardOffers-active:before {
+    content: '\e951';
+  }

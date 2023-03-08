@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "TKT-Caps";
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "TKT-Caps";
+  src: url(./fonts/TKT-Medium-Caps.ttf);
+}
+
+@font-face {
+  font-family: "TKT";
+  src: url(./fonts/TKT-Regular.ttf);
+}
+
+body {
+  background-color: #F5F6FF;
+  // background-color: red;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1580px;
+  width: 100%;
+}

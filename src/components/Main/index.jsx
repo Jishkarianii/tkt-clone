@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./style.scss";
 import PromoSlider from "../PromoSlider";
 import { promoSliderData } from '../../data'
+import { popularEvents } from "../../data";
+import { banners } from "../../data";
+import BlockSlider from "../BlockSlider";
+import Banner from "../Banner";
 
 function Main() {
   const [isOpen, setIsOpen] = useState(true);
@@ -70,6 +74,7 @@ function Main() {
       </div>
       <div className="content">
         <PromoSlider data={promoSliderData} />
+        <BlockSlider data={popularEvents} />
       </div>
     </main>
   );

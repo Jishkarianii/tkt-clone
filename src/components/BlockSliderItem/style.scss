@@ -1,0 +1,97 @@
+.block-slider-item {
+  position: relative;
+  cursor: pointer;
+
+  .date {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(30, 33, 64);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    font-size: 12px;
+    z-index: 100;
+  }
+
+  .img-cont {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgb(12, 19, 33), rgba(12, 19, 33, 0));
+      transition: 0.3s;
+      z-index: 99;
+      opacity: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .price {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 9.5px 20px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(15, 120, 255);
+      transform: translateY(55px);
+      border-radius: 8px;
+      transition: 0.3s;
+      z-index: 100;
+    }
+  }
+
+  &:hover {
+    .img-cont {
+      .bg {
+        opacity: 1;
+      }
+
+      .price {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .title {
+    margin-top: 8px;
+    color: rgb(30, 33, 64);
+    font-weight: normal;
+    font-size: 14px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .location {
+    margin-top: 4px;
+    color: rgb(30, 33, 64);
+    font-family: "TKT";
+    font-size: 12px;
+  }
+
+  .time {
+    margin-top: 4px;
+    color: rgb(15, 120, 255);
+    font-family: "TKT";
+    font-size: 12px;
+  }
+}

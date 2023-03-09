@@ -1,0 +1,54 @@
+.block-slider {
+  margin-top: 20px;
+  padding-top: 45px;
+  position: relative;
+
+  .head {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 12px;
+      font-family: "TKT";
+      cursor: pointer;
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    width: 27px;
+    height: 23.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 22px;
+    left: unset;
+    bottom: unset;
+    color: #242948;
+    z-index: 100;
+  }
+
+  .swiper-button-prev {
+    right: 28px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}

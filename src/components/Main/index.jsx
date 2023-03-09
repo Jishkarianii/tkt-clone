@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./style.scss";
+import PromoSlider from "../PromoSlider";
+import { promoSliderData } from '../../data'
 
 function Main() {
   const [isOpen, setIsOpen] = useState(true);
@@ -66,7 +68,9 @@ function Main() {
           </li>
         </ul>
       </div>
-      <div className="content"></div>
+      <div className="content">
+        <PromoSlider data={promoSliderData} />
+      </div>
     </main>
   );
 }

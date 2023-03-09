@@ -1,5 +1,4 @@
 import "./style.scss";
-import img from "../../assets/images/7bb89cfcbcd7.jpeg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,9 +1,7 @@
-import { useState } from "react";
 import "./style.scss";
+import { useState } from "react";
+import { promoSliderData, popularEvents, banners, today, newEvents } from '../../data'
 import PromoSlider from "../PromoSlider";
-import { promoSliderData } from '../../data'
-import { popularEvents } from "../../data";
-import { banners } from "../../data";
 import BlockSlider from "../BlockSlider";
 import Banner from "../Banner";
 
@@ -74,7 +72,11 @@ function Main() {
       </div>
       <div className="content">
         <PromoSlider data={promoSliderData} />
-        <BlockSlider data={popularEvents} />
+        <BlockSlider title="პოპულარული ღონისძიებები" data={popularEvents} />
+        <Banner img={banners[0].img} />
+        <BlockSlider title="დღეს" data={today} />
+        <BlockSlider title="ახალი ღონისძიებები" data={newEvents} />
+        <Banner img={banners[1].img} />
       </div>
     </main>
   );

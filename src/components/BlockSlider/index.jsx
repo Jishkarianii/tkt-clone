@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import BlockSliderItem from "../BlockSliderItem";
 
-function BlockSlider({ data }) {
+function BlockSlider({ title, data }) {
   return (
     <Swiper
       className="block-slider"
@@ -23,7 +23,7 @@ function BlockSlider({ data }) {
       modules={[Navigation]}
     >
       <div className="head">
-        <h3>პოპულარული ღონისძიებები</h3>
+        <h3>{title}</h3>
         <p>ყველა</p>
       </div>
       {data.map((item, idx) => (

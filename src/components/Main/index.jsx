@@ -45,7 +45,7 @@ function Main() {
 
   return (
     <main className="container">
-      <div className="side-bar">
+      <div className="side-bar" data-aos="fade-right">
         <ul className="list">
           <li className="item">
             <span className="icon-home-active active"></span>

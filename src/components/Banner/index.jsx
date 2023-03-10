@@ -2,7 +2,7 @@ import "./style.scss";
 
 function Banner({ img }) {
   return (
-    <div className="banner">
+    <div className="banner" data-aos="fade-left">
       <img src={img} alt="banner" />
     </div>
   );

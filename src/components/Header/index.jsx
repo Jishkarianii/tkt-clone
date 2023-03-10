@@ -8,7 +8,7 @@ function Header() {
   const [searchInp, setSearchInp] = useState("");
 
   return (
-    <header>
+    <header data-aos="fade-down">
       <div className="header-top-line"></div>
       <div className="header-cont">
         <div className="white-space"></div>

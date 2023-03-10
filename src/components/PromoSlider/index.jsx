@@ -12,7 +12,7 @@ import { Navigation } from "swiper";
 
 function PromoSlider({ data }) {
   return (
-    <>
+    <div data-aos="fade">
       <Swiper
         className="promo-slider"
         simulateTouch={false}
@@ -31,7 +31,7 @@ function PromoSlider({ data }) {
         </svg>
         <div className="dot"></div>
       </Swiper>
-    </>
+    </div>
   );
 }
 

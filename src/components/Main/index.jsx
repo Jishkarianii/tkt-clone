@@ -1,20 +1,51 @@
 import "./style.scss";
-import { useState } from "react";
-import { promoSliderData, popularEvents, banners, today, newEvents } from '../../data'
+import { useEffect, useState } from "react";
+import {
+  promoSliderData,
+  popularEvents,
+  banners,
+  today,
+  newEvents,
+  flights,
+  railway,
+} from "../../data";
 import PromoSlider from "../PromoSlider";
 import BlockSlider from "../BlockSlider";
 import Banner from "../Banner";
+import NoHoverSlider from "../NoHoverSlider";
+
+function resizeSlider() {
+  const width = window.innerWidth;
+
+  if (width > 1580) {
+    return 4
+  } else if (width > 1200 && width < 1580) {
+    return 3
+  } else if (width > 1020 && width < 1200) {
+    return 2
+  }
+}
 
 function Main() {
   const [isOpen, setIsOpen] = useState(true);
+  const [slidesPerView, setSlidesPerView] = useState(resizeSlider());
+
+  useEffect(() => {
+    window.addEventListener("resize", sliderHandler)
+    return () => window.removeEventListener("resize", sliderHandler)
+  }, []);
 
   const accordionHandler = () => {
     setIsOpen(!isOpen);
   };
 
+  const sliderHandler = () => {
+    setSlidesPerView(resizeSlider())
+  };
+
   return (
     <main className="container">
-      <div className="side-bar">
+      <div className="side-bar" data-aos="fade-right">
         <ul className="list">
           <li className="item">
             <span className="icon-home-active active"></span>
@@ -72,11 +103,38 @@ function Main() {
       </div>
       <div className="content">
         <PromoSlider data={promoSliderData} />
-        <BlockSlider title="პოპულარული ღონისძიებები" data={popularEvents} />
+        <BlockSlider
+          title="პოპულარული ღონისძიებები"
+          subText="ყველა"
+          data={popularEvents}
+          slidesPerView={slidesPerView}
+        />
         <Banner img={banners[0].img} />
-        <BlockSlider title="დღეს" data={today} />
-        <BlockSlider title="ახალი ღონისძიებები" data={newEvents} />
+        <BlockSlider 
+          title="დღეს" 
+          data={today} 
+          slidesPerView={slidesPerView} 
+        />
+        <BlockSlider
+          title="ახალი ღონისძიებები"
+          subText="ყველა"
+          data={newEvents}
+          slidesPerView={slidesPerView}
+        />
         <Banner img={banners[1].img} />
+        <NoHoverSlider
+          title="ფრენები"
+          data={flights}
+          slidesPerView={slidesPerView}
+        />
+        <Banner img={banners[2].img} />
+        <NoHoverSlider
+          title="რკინიგზა"
+          subText="ყველა მიმართულება"
+          data={railway}
+          slidesPerView={3}
+          navigation={false}
+        />
       </div>
     </main>
   );

@@ -1,0 +1,26 @@
+footer {
+    padding: 30px 0;
+    background-color: #ffffff;
+
+    .inner-cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+        gap: 20px;
+
+        ul {
+            list-style: none;
+            
+            li {
+                padding: 8px 0;
+                padding-right: 30px;
+                font-size: 12px;
+                font-family: "TKT";
+                cursor: pointer;
+
+                img {
+                    width: 88px;
+                }
+            }
+        }
+    }
+}

@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
-import BlockSliderItem from "../BlockSliderItem";
+import NoHoverSliderItem from "../NoHoverSliderItem";
 
-function BlockSlider({
+function NoHoverSlider({
   title,
   subText,
   data,
@@ -21,7 +21,7 @@ function BlockSlider({
   return (
     <div data-aos="fade-up">
       <Swiper
-        className="block-slider"
+        className="no-hover-slider"
         spaceBetween={20}
         slidesPerView={slidesPerView}
         simulateTouch={navigation}
@@ -29,21 +29,14 @@ function BlockSlider({
         navigation={navigation}
         modules={[Navigation]}
       >
-        <div className="head">
+        <div className={`head ${!navigation ? "full" : ""}`}>
           <h3>{title}</h3>
           {subText && <p>{subText}</p>}
         </div>
         {data.map((item, idx) => (
           <SwiperSlide key={idx}>
             <div data-aos="fade-up" data-aos-delay={idx * 200}>
-              <BlockSliderItem
-                date={item.date}
-                img={item.img}
-                price={item.price}
-                title={item.title}
-                location={item.location}
-                time={item.time}
-              />
+              <NoHoverSliderItem img={item.img} title={item.title} />
             </div>
           </SwiperSlide>
         ))}
@@ -52,4 +45,4 @@ function BlockSlider({
   );
 }
 
-export default BlockSlider;
+export default NoHoverSlider;

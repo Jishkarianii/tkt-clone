@@ -53,6 +53,7 @@ export const popularEvents = [
 export const banners = [
   { img: "./images/08c577227ba6.jpeg" },
   { img: "./images/railway_banner.png" },
+  { img: "./images/bus.jpg" },
 ];
 
 export const today = [
@@ -138,5 +139,43 @@ export const newEvents = [
     title: 'ჯუზეპე ვერდი "დონ კარლოსი"',
     location: "თბილისის ოპერისა და ბალეტის თეატრი",
     time: "პარასკევი, 19:00",
+  },
+];
+
+export const flights = [
+  {
+    img: "./images/berlin.jpeg",
+    title: "თბილისი - ბერლინი",
+  },
+  {
+    img: "./images/istanbul.jpeg",
+    title: "თბილისი - სტამბოლი",
+  },
+  {
+    img: "./images/warsaw.jpeg",
+    title: "თბილისი - ვარშავა",
+  },
+  {
+    img: "./images/paris.jpg",
+    title: "თბილისი - პარიზი",
+  },
+  {
+    img: "./images/vienna.jpg",
+    title: "თბილისი - ვენა",
+  },
+];
+
+export const railway = [
+  {
+    img: "./images/batumi.jpg",
+    title: "თბილისი - ბათუმი",
+  },
+  {
+    img: "./images/tbilisi.jpg",
+    title: "ბათუმი - თბილისი",
+  },
+  {
+    img: "./images/foti.jpg",
+    title: "თბილისი - ფოთი",
   },
 ];

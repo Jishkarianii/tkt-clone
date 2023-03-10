@@ -53,6 +53,7 @@ export const popularEvents = [
 export const banners = [
   { img: "./images/08c577227ba6.jpeg" },
   { img: "./images/railway_banner.png" },
+  { img: "./images/bus.jpg" },
 ];
 
 export const today = [
@@ -161,5 +162,20 @@ export const flights = [
   {
     img: "./images/vienna.jpg",
     title: "თბილისი - ვენა",
+  },
+];
+
+export const railway = [
+  {
+    img: "./images/batumi.jpg",
+    title: "თბილისი - ბათუმი",
+  },
+  {
+    img: "./images/tbilisi.jpg",
+    title: "ბათუმი - თბილისი",
+  },
+  {
+    img: "./images/foti.jpg",
+    title: "თბილისი - ფოთი",
   },
 ];

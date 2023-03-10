@@ -6,7 +6,8 @@ import {
   banners,
   today,
   newEvents,
-  flights
+  flights,
+  railway
 } from "../../data";
 import PromoSlider from "../PromoSlider";
 import BlockSlider from "../BlockSlider";
@@ -99,6 +100,14 @@ function Main() {
           title="ფრენები"
           data={flights}
           slidesPerView={3}
+        />
+        <Banner img={banners[2].img} />
+        <NoHoverSlider
+          title="რკინიგზა"
+          subText="ყველა მიმართულება"
+          data={railway}
+          slidesPerView={3}
+          navigation={false}
         />
       </div>
     </main>

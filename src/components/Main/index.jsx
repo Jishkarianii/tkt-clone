@@ -1,9 +1,17 @@
 import "./style.scss";
 import { useState } from "react";
-import { promoSliderData, popularEvents, banners, today, newEvents } from '../../data'
+import {
+  promoSliderData,
+  popularEvents,
+  banners,
+  today,
+  newEvents,
+  flights
+} from "../../data";
 import PromoSlider from "../PromoSlider";
 import BlockSlider from "../BlockSlider";
 import Banner from "../Banner";
+import NoHoverSlider from "../NoHoverSlider";
 
 function Main() {
   const [isOpen, setIsOpen] = useState(true);
@@ -72,11 +80,26 @@ function Main() {
       </div>
       <div className="content">
         <PromoSlider data={promoSliderData} />
-        <BlockSlider title="პოპულარული ღონისძიებები" data={popularEvents} />
+        <BlockSlider
+          title="პოპულარული ღონისძიებები"
+          subText="ყველა"
+          data={popularEvents}
+          slidesPerView={3}
+        />
         <Banner img={banners[0].img} />
-        <BlockSlider title="დღეს" data={today} />
-        <BlockSlider title="ახალი ღონისძიებები" data={newEvents} />
+        <BlockSlider title="დღეს" data={today} slidesPerView={3} />
+        <BlockSlider
+          title="ახალი ღონისძიებები"
+          subText="ყველა"
+          data={newEvents}
+          slidesPerView={3}
+        />
         <Banner img={banners[1].img} />
+        <NoHoverSlider
+          title="ფრენები"
+          data={flights}
+          slidesPerView={3}
+        />
       </div>
     </main>
   );

@@ -140,3 +140,26 @@ export const newEvents = [
     time: "პარასკევი, 19:00",
   },
 ];
+
+export const flights = [
+  {
+    img: "./images/berlin.jpeg",
+    title: "თბილისი - ბერლინი",
+  },
+  {
+    img: "./images/istanbul.jpeg",
+    title: "თბილისი - სტამბოლი",
+  },
+  {
+    img: "./images/warsaw.jpeg",
+    title: "თბილისი - ვარშავა",
+  },
+  {
+    img: "./images/paris.jpg",
+    title: "თბილისი - პარიზი",
+  },
+  {
+    img: "./images/vienna.jpg",
+    title: "თბილისი - ვენა",
+  },
+];

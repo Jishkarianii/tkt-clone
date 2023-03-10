@@ -1,5 +1,5 @@
 import "./style.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   promoSliderData,
   popularEvents,
@@ -7,18 +7,40 @@ import {
   today,
   newEvents,
   flights,
-  railway
+  railway,
 } from "../../data";
 import PromoSlider from "../PromoSlider";
 import BlockSlider from "../BlockSlider";
 import Banner from "../Banner";
 import NoHoverSlider from "../NoHoverSlider";
 
+function resizeSlider() {
+  const width = window.screen.width;
+
+  if (width > 1580) {
+    return 4
+  } else if (width > 1200 && width < 1580) {
+    return 3
+  } else if (width > 1020 && width < 1200) {
+    return 2
+  }
+}
+
 function Main() {
   const [isOpen, setIsOpen] = useState(true);
+  const [slidesPerView, setSlidesPerView] = useState(resizeSlider());
+
+  useEffect(() => {
+    window.addEventListener("resize", sliderHandler)
+    return () => window.removeEventListener("resize", sliderHandler)
+  }, []);
 
   const accordionHandler = () => {
     setIsOpen(!isOpen);
+  };
+
+  const sliderHandler = () => {
+    setSlidesPerView(resizeSlider())
   };
 
   return (
@@ -85,21 +107,25 @@ function Main() {
           title="პოპულარული ღონისძიებები"
           subText="ყველა"
           data={popularEvents}
-          slidesPerView={3}
+          slidesPerView={slidesPerView}
         />
         <Banner img={banners[0].img} />
-        <BlockSlider title="დღეს" data={today} slidesPerView={3} />
+        <BlockSlider 
+          title="დღეს" 
+          data={today} 
+          slidesPerView={slidesPerView} 
+        />
         <BlockSlider
           title="ახალი ღონისძიებები"
           subText="ყველა"
           data={newEvents}
-          slidesPerView={3}
+          slidesPerView={slidesPerView}
         />
         <Banner img={banners[1].img} />
         <NoHoverSlider
           title="ფრენები"
           data={flights}
-          slidesPerView={3}
+          slidesPerView={slidesPerView}
         />
         <Banner img={banners[2].img} />
         <NoHoverSlider

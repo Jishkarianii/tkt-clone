@@ -11,20 +11,20 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import BlockSliderItem from "../BlockSliderItem";
 
-function BlockSlider({ title, data }) {
+function BlockSlider({ title, subText, data, slidesPerView, navigation = true }) {
   return (
     <Swiper
       className="block-slider"
       spaceBetween={20}
-      slidesPerView={3}
-      simulateTouch={false}
+      slidesPerView={slidesPerView}
+      simulateTouch={navigation}
       speed={500}
-      navigation={true}
+      navigation={navigation}
       modules={[Navigation]}
     >
       <div className="head">
         <h3>{title}</h3>
-        <p>ყველა</p>
+        {subText && <p>{subText}</p>}
       </div>
       {data.map((item, idx) => (
         <SwiperSlide key={idx}>

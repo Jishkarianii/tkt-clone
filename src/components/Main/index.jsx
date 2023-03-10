@@ -15,7 +15,7 @@ import Banner from "../Banner";
 import NoHoverSlider from "../NoHoverSlider";
 
 function resizeSlider() {
-  const width = window.screen.width;
+  const width = window.innerWidth;
 
   if (width > 1580) {
     return 4

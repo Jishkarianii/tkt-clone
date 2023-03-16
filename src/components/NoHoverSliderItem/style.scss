@@ -43,3 +43,14 @@
     z-index: 99;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .no-hover-slider-item {
+    width: 165px;
+    padding-bottom: 130%;
+
+    p {
+      white-space: pre-wrap;
+    }
+  }
+}

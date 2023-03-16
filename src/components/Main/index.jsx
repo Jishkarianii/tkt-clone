@@ -21,8 +21,10 @@ function resizeSlider() {
     return 4
   } else if (width > 1200 && width < 1580) {
     return 3
-  } else if (width > 1020 && width < 1200) {
+  } else if (width > 600 && width < 1200) {
     return 2
+  } else {
+    return 1
   }
 }
 
@@ -107,6 +109,7 @@ function Main() {
           title="პოპულარული ღონისძიებები"
           subText="ყველა"
           data={popularEvents}
+          onPageLoad={true}
           slidesPerView={slidesPerView}
         />
         <Banner img={banners[0].img} />

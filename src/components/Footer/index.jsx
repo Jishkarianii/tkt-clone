@@ -29,6 +29,11 @@ function Footer() {
                 <li>Copyright © 2015-2023 Online Tickets LLC. ყველა უფლება დაცულია.</li>
             </ul>
         </div>
+        <div className="mobile container">
+            <p>საიტის ძველი ვერსია</p>
+            <p>Copyright © 2015-2020 Online Tickets LLC.</p>
+            <p>ყველა უფლება დაცულია.</p>
+        </div>
     </footer>
   )
 }

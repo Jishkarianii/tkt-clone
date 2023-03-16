@@ -56,3 +56,30 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .mobile-slider {
+    .head {
+      padding: 12px 0;
+
+      h3 {
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+
+    .slider-cont {
+      display: flex;
+      gap: 16px;
+      overflow-x: scroll;
+
+      // Hide scrollbar  
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

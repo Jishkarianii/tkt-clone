@@ -52,3 +52,9 @@ body {
   border-left: 4px solid #f5f6ff;
   border-right: 4px solid #f5f6ff;
 }
+
+@media screen and (max-width: 1020px) {
+  .container {
+    padding: 0 24px;
+  }
+}

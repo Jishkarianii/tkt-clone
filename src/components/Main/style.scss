@@ -94,3 +94,18 @@ main {
     overflow: hidden;
   }
 }
+
+@media screen and (max-width: 1020px) {
+  main {
+    padding-top: 135px !important;
+    grid-template-columns: 1fr;
+
+    .side-bar {
+      display: none;
+    }
+
+    .content {
+      padding-bottom: 24px;
+    }
+  }
+}
